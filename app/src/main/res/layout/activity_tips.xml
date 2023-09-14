@@ -1,0 +1,124 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#10193c"
+    android:gravity="center_horizontal">
+
+    <!-- First TextView with Lightbulb Icon -->
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:background="@drawable/btn2"
+            android:text="Tips"
+            android:layout_marginTop="50dp"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+
+
+    <!-- Second TextView with Lightbulb Icon -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_lightbulb_circle_24"
+        android:contentDescription="Lightbulb Icon"
+        android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="94dp"
+            android:text="Planting shade trees: Suggest planting trees strategically around the house to provide natural shade reducing the need for excessive air conditioning during hot months"
+            android:textAlignment="textStart"
+            android:textColor="#cd86c9"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Third TextView with Lightbulb Icon -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_lightbulb_circle_24"
+            android:contentDescription="Lightbulb Icon"
+            android:layout_marginEnd="8dp" />
+
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:text="Solar Powered Chargers: Encourage users to invest in solar chargers for their electronic devices. This way they can harness the power of the sun to charge their gadgets reducing reliance on traditional electricity"
+            android:textAlignment="textStart"
+            android:textColor="#FF0000"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Fourth TextView with Lightbulb Icon -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_lightbulb_circle_24"
+            android:contentDescription="Lightbulb Icon"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="96dp"
+            android:text="Charging optimization: Recommend that users charge their devices during off-peak hours or when electricity supply is stable. This can help ease the load on the grid during peak usage times."
+            android:textAlignment="textStart"
+            android:textColor="#ADFF2F"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_lightbulb_circle_24"
+            android:contentDescription="Lightbulb Icon"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="96dp"
+            android:text="Charging optimization: Recommend that users charge their devices during off-peak hours or when electricity supply is stable. This can help ease the load on the grid during peak usage times."
+            android:textAlignment="textStart"
+            android:textColor="#ffe578"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>

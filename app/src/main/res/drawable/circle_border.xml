@@ -1,0 +1,28 @@
+<!-- res/drawable/circle_border.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Outer circle (white border) -->
+    <item
+        android:top="2dp"
+        android:right="2dp"
+        android:bottom="2dp"
+        android:left="2dp">
+        <shape
+            android:shape="oval">
+            <solid android:color="#10193c" /> <!-- White circle background -->
+            <stroke
+                android:width="8dp"
+                android:color="@color/white" /> <!-- Thin purple border -->
+        </shape>
+    </item>
+    <!-- Inner transparent circle -->
+    <item
+        android:top="6dp"
+        android:right="6dp"
+        android:bottom="6dp"
+        android:left="6dp">
+        <shape
+            android:shape="oval">
+            <solid android:color="#00000000" /> <!-- Transparent inner circle -->
+        </shape>
+    </item>
+</layer-list>

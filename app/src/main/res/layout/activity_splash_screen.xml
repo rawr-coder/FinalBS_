@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/op"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen">
+
+    <!-- Use a weight to push content to the top -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Spacer to push content to the top -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4" />
+
+        <TextView
+            android:id="@+id/haedigB"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="sans-serif"
+            android:text="Blackout"
+            android:textColor="#FFFFFF"
+            android:textSize="60sp"
+            android:textStyle="normal"
+            android:transitionName="logo_text" />
+
+        <TextView
+            android:id="@+id/trworld_text"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="sans-serif"
+            android:text="Solution"
+            android:textColor="#cd86c9"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:transitionName="logo_text" />
+
+        <TextView
+            android:id="@+id/trickyworld_text"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="sans-serif"
+            android:text="A simple explanation to the audience regarding the headline"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:transitionName="logo_text" />
+
+        <!-- Spacer to push content to the top -->
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:orientation="horizontal">
+
+        <!-- TextButton (Left) -->
+        <TextView
+            android:gravity="bottom"
+            android:id="@+id/skip_button"
+            android:layout_width="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Skip"
+            android:clickable="true"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#cd86c9" />
+
+        <!-- Circular Button (Right) -->
+        <ImageButton
+            android:id="@+id/circular_button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="end"
+            android:layout_margin="16dp"
+
+            android:background="@drawable/baseline_arrow_circle_right_24"
+            android:onClick="performAction"
+            android:contentDescription="Circular Button" />
+
+    </LinearLayout>
+</LinearLayout>
