@@ -93,9 +93,8 @@
             android:layout_height="80dp"
             android:layout_gravity="end"
             android:layout_margin="16dp"
-
-            android:background="@drawable/baseline_arrow_circle_right_24"
             android:onClick="performAction"
+            android:background="@drawable/baseline_arrow_circle_right_24"
             android:contentDescription="Circular Button" />
 
     </LinearLayout>

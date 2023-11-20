@@ -1,11 +1,11 @@
 package com.example.finalbs_
 
-import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
 
-class tips : AppCompatActivity() {
+class WattCalcActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_tips)
+        setContentView(R.layout.activity_watt_calc)
     }
 }

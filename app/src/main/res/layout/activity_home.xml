@@ -3,10 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="#10193c"
     android:orientation="vertical"
-    android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment">
+    tools:context=".HomeActivity">
+
 
     <!-- Parent LinearLayout -->
     <LinearLayout
@@ -77,49 +78,82 @@
     <!-- Animated Circle Container -->
     <FrameLayout
         android:id="@+id/animatedCircleContainer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="520dp"
         android:layout_gravity="center">
 
-        <!-- Animated Circle (with white border) -->
-        <View
-            android:layout_marginTop="100dp"
-            android:id="@+id/animatedCircle"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:background="@drawable/circle_border"
-            android:contentDescription="Animated Circle" />
 
-        <!-- Vertical Text (centered in the circle) -->
-        <LinearLayout
+        <!-- Display area information -->
+        <TextView
+            android:id="@+id/textViewAreaInfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:orientation="vertical">
+            android:text="Area Information" />
 
-            <TextView
-                android:gravity="center"
-                android:id="@+id/text1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="80dp"
-                android:text="Stage 1"
-                android:textColor="#FFFFFF"
-                android:textSize="35sp"
-                android:textStyle="bold" />
+        <!-- Display schedule for each day using RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
 
-            <TextView
-                android:id="@+id/text2"
+        <!-- Button to trigger the API request -->
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Stage 3 starts at 4pm"
-                android:textColor="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="bold" />
-        </LinearLayout>
     </FrameLayout>
 
+    <LinearLayout
+        android:id="@+id/bottomRectangle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:background="#10193c"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="bottom"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/Home"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#10193c"
+            android:gravity="center"
+            android:onClick="HomePage"
+            android:src="@drawable/ic_home_black_24dp"/>
+
+        <ImageButton
+            android:id="@+id/Hotspot"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#10193c"
+            android:gravity="center"
+            android:onClick="Status"
+            android:src="@drawable/baseline_search_24"/>
+
+        <ImageButton
+            android:id="@+id/addsighting"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#10193c"
+            android:gravity="center"
+            android:onClick="AddLocation"
+            android:src="@drawable/location"/>
+
+        <ImageButton
+            android:id="@+id/settings"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="#10193c"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="Calc"
+            android:src="@drawable/calculator"/>
+
+
+
+    </LinearLayout>
 
 </LinearLayout>

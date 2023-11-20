@@ -15,7 +15,7 @@ class SplashScreen : AppCompatActivity() {
     fun performAction(view: View) {
         val nextButton: ImageButton = findViewById(R.id.circular_button)
         nextButton.setOnClickListener {
-            val intent = Intent(this@SplashScreen, MainActivity::class.java)
+            val intent = Intent(this@SplashScreen, HomeActivity::class.java)
             startActivity(intent)
         }
 

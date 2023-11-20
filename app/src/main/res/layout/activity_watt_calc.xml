@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:background="#10193c"
     android:layout_height="match_parent"
-    tools:context=".ui.addlocation.wattcalcFragment">
+    tools:context=".WattCalcActivity">
+
+
 
     <TextView
         android:id="@+id/textView2"
@@ -181,4 +183,61 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+
+
+    <LinearLayout
+        android:id="@+id/bottomRectangle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:background="#10193c"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="bottom"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/Home"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#10193c"
+            android:gravity="center"
+            android:onClick="HomePage"
+            android:src="@drawable/ic_home_black_24dp"/>
+
+        <ImageButton
+            android:id="@+id/Hotspot"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#10193c"
+            android:gravity="center"
+            android:onClick="HotSpot"
+            android:src="@drawable/baseline_search_24"/>
+
+        <ImageButton
+            android:id="@+id/addsighting"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#10193c"
+            android:gravity="center"
+            android:onClick="Observations"
+            android:src="@drawable/location"/>
+
+        <ImageButton
+            android:id="@+id/settings"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="#10193c"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="settings"
+            android:src="@drawable/calculator"/>
+
+
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

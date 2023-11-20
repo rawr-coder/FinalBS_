@@ -1,11 +1,12 @@
 package com.example.finalbs_
 
-import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import com.example.finalbs_.R
 
-class tips : AppCompatActivity() {
+class AddLocationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_tips)
+        setContentView(R.layout.activity_add_location)
     }
 }
